@@ -22,7 +22,7 @@ jobs:
       if: success()
       uses: peaceiris/actions-gh-pages@v3
       with:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.deploy_key }}
         publish_dir: out
         allow_empty_commit: true
         enable_jekyll: true
