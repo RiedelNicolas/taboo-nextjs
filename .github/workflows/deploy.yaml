@@ -17,6 +17,7 @@ jobs:
       run: npm ci 
     - name: build
       run: npm run build
+    - name: disable jekyll
       run: touch out/.nojekyll
 
     - name: deploy
