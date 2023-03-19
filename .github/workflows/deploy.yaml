@@ -28,3 +28,4 @@ jobs:
         publish_dir: out
         allow_empty_commit: true
         enable_jekyll: true
+        cname: taboo.nriedel.com.ar
