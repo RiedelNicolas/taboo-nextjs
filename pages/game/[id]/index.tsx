@@ -26,7 +26,7 @@ export default function Game() {
                                 </Card.Header>
                                 <Card.Body>
                                     <Card.Text>
-                                        We weren't able to find the word
+                                        We weren&apos;t able to find the word
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
