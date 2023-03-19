@@ -19,7 +19,7 @@ export default function Game() {
             <main className={styles.main}>
                 <Container className={styles.container}>
                     <Row className='d-flex justify-content-center'>
-                        <Col md="6">
+                        <Col md="6" xs="10">
                             <Card>
                                 <Card.Header>
                                     <Card.Title>An error has occurred</Card.Title>
@@ -41,7 +41,7 @@ export default function Game() {
         <main className={styles.main}>
             <Container className={styles.container}>
                 <Row className='d-flex justify-content-center'>
-                    <Col md="6">
+                    <Col md="6" xs="10">
                         <Card>
                             <Card.Header>
                                 <Card.Text className={styles.wordtoguess}>
