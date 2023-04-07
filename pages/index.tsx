@@ -5,7 +5,6 @@ import { Button, Card, Col, Container, Row } from 'react-bootstrap'
 import { getRandomIndex } from '@/utils/getRandomIndex'
 import { useRouter } from 'next/router'
 
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   const router = useRouter();
