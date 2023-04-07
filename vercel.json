@@ -1,5 +1,5 @@
 {
   "rewrites":  [
-    {"source": "/game/:id*", "destination": "/game/:id"}
+    {"source": "/game/:id*", "destination": "/game/:id*"}
   ]
 }
