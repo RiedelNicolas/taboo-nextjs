@@ -24,6 +24,13 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <Container className={styles.container}>
+          <Row>
+            <Col>
+              <Button>
+                Return to Home
+              </Button>
+            </Col>
+          </Row>
           <Row className='d-flex justify-content-center'>
               <Col md="6" xs="10">
                 <Card>
@@ -35,7 +42,9 @@ export default function Home() {
                     Hi there!
                     </Card.Text>
                     <Card.Text>
-                    My name is Nicolas Riedel, and I built this website as a means of practicing with Next.js.
+                    My name is <s></s>
+                     <Card.Link href='https://github.com/RiedelNicolas' target='_blank'>Nicolas Riedel</Card.Link>
+                    , and I built this website as a means of practicing with Next.js.
                     </Card.Text>
                     <Card.Text>
                       I hope you enjoy your experience on the site!
