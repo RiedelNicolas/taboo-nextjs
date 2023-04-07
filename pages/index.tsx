@@ -24,13 +24,6 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <Container className={styles.container}>
-          <Row>
-            <Col>
-              <Button>
-                Return to Home
-              </Button>
-            </Col>
-          </Row>
           <Row className='d-flex justify-content-center'>
               <Col md="6" xs="10">
                 <Card>
