@@ -13,6 +13,9 @@ export default function Game() {
         const randomIndex = getRandomIndex();
         router.push(`/game/${randomIndex}`)
     }
+    const handleHomeClick = () => {
+        router.push(`/`)
+    }
 
     if(!card) {
         return (
@@ -40,6 +43,13 @@ export default function Game() {
     return (
         <main className={styles.main}>
             <Container className={styles.container}>
+                <Row className="d-flex justify-content-center">
+                    <Col className={"d-flex justify-content-center " + styles.backButtonContainer}>
+                        <Button variant="secondary" onClick={handleHomeClick}>
+                            Home
+                        </Button>
+                    </Col>
+                </Row>
                 <Row className='d-flex justify-content-center'>
                     <Col md="6" xs="10">
                         <Card>
@@ -58,7 +68,7 @@ export default function Game() {
                                          card.words.map((word, index) => (
                                             <ListGroup.Item key={word}>
                                                 {word}
-                                            </ListGroup.Item>                                                
+                                            </ListGroup.Item>                                   
                                         ))
                                        }
                                      </ListGroup>
