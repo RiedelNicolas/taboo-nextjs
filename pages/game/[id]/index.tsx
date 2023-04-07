@@ -43,15 +43,15 @@ export default function Game() {
     return (
         <main className={styles.main}>
             <Container className={styles.container}>
-                <Row className="d-flex justify-content-center">
-                    <Col className={"d-flex justify-content-center " + styles.backButtonContainer}>
-                        <Button variant="secondary" onClick={handleHomeClick}>
-                            Home
-                        </Button>
-                    </Col>
-                </Row>
                 <Row className='d-flex justify-content-center'>
                     <Col md="6" xs="10">
+                        <Row >
+                            <Col className={styles.backButtonContainer}>
+                                <Button variant="secondary" onClick={handleHomeClick}>
+                                    Home
+                                </Button>
+                            </Col>
+                        </Row>
                         <Card>
                             <Card.Header>
                                 <Card.Text className={styles.wordtoguess}>
