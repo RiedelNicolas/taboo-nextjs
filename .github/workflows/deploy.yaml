@@ -19,6 +19,10 @@ jobs:
       run: npm run build
     - name: disable jekyll
       run: touch out/.nojekyll
+    - name: override 404.html
+      run: cp static-router-utils/404.html out/404.html
+    - name: insert redirect script
+      run: cp static-router-utils/index.html out/index.html
 
     - name: deploy
       if: success()
